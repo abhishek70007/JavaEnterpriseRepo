@@ -1,0 +1,23 @@
+create table tbl_student_info (
+  stud_name varchar2(25),
+  stud_id varchar2(5),
+  branch varchar2(25),
+  section char,
+  address varchar2(50),
+  Primary key(stud_id));
+
+CREATE TABLE tbl_exam_info (
+  stud_id VARCHAR2(5),
+  FOREIGN KEY(stud_id) REFERENCES tbl_student_info(stud_id),
+  subject VARCHAR2(50),
+  mark NUMBER(3),
+  status_marks VARCHAR2(10)
+);
+
+select * from tbl_student_info;
+
+select * from tbl_exam_info;
+
+desc tbl_exam_info;
+
+desc tbl_student_info;
