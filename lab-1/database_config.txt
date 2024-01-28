@@ -1,3 +1,5 @@
+Simple Student Management System
+
 create table tbl_student_info (
   stud_name varchar2(25),
   stud_id varchar2(5),
